@@ -1,13 +1,14 @@
 import React from 'react'
 import BannerSlider from '../slider/BannerSlider'
-import Gallery from './Gallery';
-
+import Categories from './Categories';
+import Offers from './Offers';
 
 const Content = () => {
     return (
         <div className=''>
             <BannerSlider />
-            <Gallery />
+            <Categories />
+            <Offers />
         </div>
     )
 }
