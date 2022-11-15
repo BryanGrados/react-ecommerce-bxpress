@@ -16,7 +16,7 @@ const BannerSlider = () => {
 
     return (
         <>
-            <div className='w-full my-20'>
+            <div className='w-full'>
                 <Carousel loop
                     withControls={false}
                     withIndicators
@@ -34,7 +34,7 @@ const BannerSlider = () => {
                         imgLinks.map((imgLink, index) => (
                             <Carousel.Slide key={index}>
                                 <img src={imgLink} alt={imgLink}
-                                    className='w-full h-96 object-cover rounded-lg' />
+                                    className='w-full h-80 md:h-[500px] object-cover' />
                             </Carousel.Slide>
                         ))
                     }

@@ -1,12 +1,13 @@
 import React from 'react'
 import BannerSlider from '../slider/BannerSlider'
-import PageInfo from './PageInfo'
+import Gallery from './Gallery';
+
 
 const Content = () => {
     return (
-        <div className='container my-20'>
-            <PageInfo />
+        <div className=''>
             <BannerSlider />
+            <Gallery />
         </div>
     )
 }

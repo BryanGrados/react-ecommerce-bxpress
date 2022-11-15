@@ -24,7 +24,7 @@ const Landing = () => {
                 <div className='absolute flex flex-col items-center justify-center bottom-5'>
                     <ActionIcon
                         component="a"
-                        href="#asd"
+                        href="#categories"
                         variant="transparent"
                         className="w-auto h-auto animate-bounce-slow"
                     >
