@@ -14,9 +14,9 @@ const BrandLogo = () => {
                 href={home}
                 target='_blank'
             >
-                <div className='flex items-center text-xl md:text-2xl space-x-5'>
-                    <GiLargeDress className='text-blue-400 dark:text-yellow-300' />
-                    <Text className='font-bold text-blue-600 dark:text-yellow-500'>Bxpress</Text>
+                <div className='flex items-center text-xl md:text-2xl space-x-2'>
+                    <GiLargeDress className='text-black dark:text-yellow-300' />
+                    <Text className='font-bold text-black dark:text-yellow-500'>BXPRESS</Text>
                 </div>
             </UnstyledButton>
         </div>

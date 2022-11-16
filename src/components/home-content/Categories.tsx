@@ -41,7 +41,7 @@ const Categories = () => {
 
     return (
         <div id='categories' className='container my-20 space-y-10'>
-            <Title className='text-blue-500 dark:text-yellow-500' order={2} underline>Categories</Title>
+            <Title className='text-black dark:text-yellow-500' order={2} underline>Categories</Title>
             <ScrollArea className='mx-auto w-full h-96 sm:w-full sm:h-[400px]'>
                 <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-20 lg:grid-cols-3'>
                     {items.map((item, index) => (
