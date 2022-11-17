@@ -1,34 +1,34 @@
 import { ActionIcon } from '@mantine/core'
 import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
 
-export const FacebookLogo = ({ size, color, ...props }: { size?: number, color?: string }) => {
+export const Facebook = ({ size, tw, color, ...props }: { size?: number, color?: string, tw?: string }) => {
     return (
         <ActionIcon {...props} variant="transparent" radius='xl'>
-            <BsFacebook size={size} color={color} />
+            <BsFacebook size={size} color={color} className={`${tw}`} />
         </ActionIcon>
     )
 }
 
-export const InstagramLogo = ({ size, color, ...props }: { size?: number, color?: string }) => {
+export const Instagram = ({ size, tw, color, ...props }: { size?: number, color?: string, tw?: string }) => {
     return (
         <ActionIcon {...props} variant="transparent" radius='xl'>
-            <BsInstagram size={size} color={color} />
+            <BsInstagram size={size} color={color} className={`${tw}`} />
         </ActionIcon>
     )
 }
 
-export const TwitterLogo = ({ size, color, ...props }: { size?: number, color?: string }) => {
+export const Twitter = ({ size, tw, color, ...props }: { size?: number, color?: string, tw?: string }) => {
     return (
         <ActionIcon {...props} variant="transparent" radius='xl'>
-            <BsTwitter size={size} color={color} />
+            <BsTwitter size={size} color={color} className={`${tw}`} />
         </ActionIcon>
     )
 }
 
-export const WhatsAppLogo = ({ size, color, ...props }: { size?: number, color?: string }) => {
+export const WhatsApp = ({ size, tw, color, ...props }: { size?: number, color?: string, tw?: string }) => {
     return (
         <ActionIcon {...props} variant="transparent" radius='xl'>
-            <BsWhatsapp size={size} color={color} />
+            <BsWhatsapp size={size} color={color} className={`${tw}`} />
         </ActionIcon>
     )
 }

@@ -49,7 +49,7 @@ const Offers = () => {
             <Title className='text-black dark:text-yellow-500' order={2} underline>Offers</Title>
             <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-20 lg:grid-cols-3 xl:grid-cols-4'>
                 {offerItems.map((item) => (
-                    <Card key={item.id} className='w-42 bg-zinc-200 dark:bg-zinc-800 space-y-5'>
+                    <Card key={item.id} className='space-y-5 w-42 bg-zinc-200 dark:bg-zinc-800'>
                         <Card.Section>
                             <Image
                                 src={item.image}
@@ -57,19 +57,19 @@ const Offers = () => {
                                 height={200}
                             />
                         </Card.Section>
-                        <Text component='a' href='#' className='font-semibold text-center block hover:underline'>
+                        <Text component='a' href='#' className='block font-semibold text-center hover:underline'>
                             {item.title.toUpperCase()}
                         </Text>
                         <Group position='center'>
-                            <Badge variant="outline" color={"gray"} radius={"sm"} className='text-center font-thin tracking-wider line-through font-mono'>
+                            <Badge variant="outline" color={"gray"} radius={"sm"} className='font-mono font-thin tracking-wider text-center line-through'>
                                 S/. {item.oldprice}
                             </Badge>
                             <Divider orientation='vertical' size={"sm"} color="" />
-                            <Badge variant="outline" color={dark ? "yellow" : "dark"} size="lg" radius={"sm"} className='text-center font-bold font-mono'>
+                            <Badge variant="outline" color={dark ? "yellow" : "dark"} size="lg" radius={"sm"} className='font-mono font-bold text-center'>
                                 S/. {item.price}
                             </Badge>
                         </Group>
-                        <Button fullWidth uppercase variant='filled' leftIcon={<BsFillCartCheckFill size={18} />} className='bg-black hover:bg-zinc-800'>
+                        <Button fullWidth uppercase variant='filled' leftIcon={<BsFillCartCheckFill size={18} />} className='bg-black hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-400'>
                             Add to cart
                         </Button>
                     </Card>
