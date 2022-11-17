@@ -46,7 +46,7 @@ const Offers = () => {
 
     return (
         <div className='container my-20 space-y-10'>
-            <Title className='text-black dark:text-yellow-500' order={2} underline>Offers</Title>
+            <Text className='text-black dark:text-white text-3xl font-medium leading-relaxed'>Offers</Text>
             <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-20 lg:grid-cols-3 xl:grid-cols-4'>
                 {offerItems.map((item) => (
                     <Card key={item.id} className='space-y-5 w-42 bg-zinc-200 dark:bg-zinc-800'>
